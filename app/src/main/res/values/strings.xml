@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="btn_true">True</string>
+    <string name="btn_false">False</string>
+    <string name="answer_right">You are right</string>
+    <string name="answer_wrong">You are wrong</string>
+    <string name="btn_left">Previous question</string>
+    <string name="btn_right">Next question</string>
+    <string name="score">You score is %1$d</string>
+    <string name="question_1">The capital of Libya is Benghazi</string>
+    <string name="question_2">Albert Einstein was awarded the Nobel Prize in Physics.</string>
+    <string name="question_3">Baby koalas are called joeys.</string>
+    <string name="question_4">Gone with the Wind takes place in Savannah, Georgia.</string>
+    <string name="question_5">Brazil is the only country in the Americas whose official language is Portuguese.</string>
+    <string name="question_6">The first name of Kramer in Seinfeld is Cosmo.</string>
+    <string name="question_7">The American Civil War ended in 1776.</string>
+    <string name="question_8">A right triangle can never be equilateral.</string>
+    <string name="question_9">The Ford Edsel was named after Henry Ford’s father.</string>
+    <string name="question_10">The Dickens novel Oliver Twist begins with the well-known phrase: “It was the best of times, it was the worst of times.”</string>
+</resources>
