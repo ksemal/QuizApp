@@ -1,5 +1,6 @@
 package com.example.quizapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var trueBtn: Button
     private lateinit var falseBtn: Button
     lateinit var question: TextView
+    private lateinit var cheatButton: Button
     private var score = 0
 
     private val quizViewModel: QuizViewModel by lazy {
@@ -27,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-        Log.i(TAG,"onSaveInstanceState")
+        Log.i(TAG, "onSaveInstanceState")
         outState.putInt(KEY_INDEX, quizViewModel.currentQuestionIndex)
     }
 
@@ -43,6 +45,7 @@ class MainActivity : AppCompatActivity() {
         trueBtn = findViewById(R.id.btn_true)
         falseBtn = findViewById(R.id.btn_false)
         question = findViewById(R.id.textView)
+        cheatButton = findViewById(R.id.btn_cheat)
 
         getQuestion()
 
@@ -60,6 +63,13 @@ class MainActivity : AppCompatActivity() {
 
         falseBtn.setOnClickListener {
             checkAnswer(false)
+        }
+
+        cheatButton.setOnClickListener {
+            //start activity
+            val answerIsTrue = quizViewModel.currentQuestionAnswer
+            val intent = CheatActivity.newIntent(this, answerIsTrue)
+            startActivity(intent)
         }
 
 

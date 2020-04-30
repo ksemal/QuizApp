@@ -17,4 +17,9 @@
     <string name="question_8">A right triangle can never be equilateral.</string>
     <string name="question_9">The Ford Edsel was named after Henry Ford’s father.</string>
     <string name="question_10">The Dickens novel Oliver Twist begins with the well-known phrase: “It was the best of times, it was the worst of times.”</string>
+    <string name="warning_text">Are you sure you want to do this?</string>
+    <string name="show_answer_button">Show Answer</string>
+    <string name="cheat_button">Cheat!</string>
+    <string name="judgment_toast">Cheating is wrong</string>
+    <string name="answer">Answer</string>
 </resources>
